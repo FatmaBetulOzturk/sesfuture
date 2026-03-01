@@ -49,18 +49,45 @@ font-size: 14px;
 opacity: 0.8;
 }
 </style>
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
 </head>
 <body>
 
 <header>
-<h1>Hoş Geldiniz 🚀</h1>
-<p>PROJEMİZ BAŞLIYOR!</p>
-<a href="#hakkimda" class="btn">Daha Fazla</a>
+    <h1>Hoş Geldiniz 🚀</h1>
+    <nav>
+        <ul>
+            <li><a href="#anasayfa">Ana Sayfa</a></li>
+            <li><a href="#hakkimda">Hakkımda</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+    </nav>
 </header>
 
 <section id="hakkimda">
 <h2>Hakkımda</h2>
-<p>Buraya kendinizle ilgili bilgileri yazabilirsiniz.</p>
+<p>web sitemize hoş geldiniz.</p>
 </section>
 
 <footer>
