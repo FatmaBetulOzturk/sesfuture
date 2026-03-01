@@ -5,72 +5,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Benim Web Sitem</title>
 <style>
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-background: linear-gradient(135deg, #667eea, #764ba2);
-color: white;
-text-align: center;
-}
-header {
-padding: 60px 20px;
-}
-h1 {
-font-size: 48px;
-margin-bottom: 10px;
-}
-p {
-font-size: 20px;
-opacity: 0.9;
-}
-.btn {
-display: inline-block;
-margin-top: 30px;
-padding: 15px 30px;
-background: white;
-color: #764ba2;
-text-decoration: none;
-border-radius: 30px;
-font-weight: bold;
-transition: 0.3s;
-}
-.btn:hover {
-background: #f1f1f1;
-transform: scale(1.05);
-}
-section {
-background: white;
-color: #333;
-padding: 60px 20px;
-}
-footer {
-padding: 20px;
-font-size: 14px;
-opacity: 0.8;
-}
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        text-align: center;
+        scroll-behavior: smooth;
+    }
+    header {
+        padding: 20px;
+        background: #333;
+    }
+    header h1 {
+        margin: 10px 0;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    nav ul li {
+        margin: 0 15px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    nav ul li a:hover {
+        color: #ffdd57;
+    }
+    section {
+        padding: 60px 20px;
+        background: white;
+        color: #333;
+    }
+    section:nth-of-type(odd) {
+        background: #f1f1f1;
+    }
+    footer {
+        padding: 20px;
+        background: #333;
+        color: #aaa;
+    }
 </style>
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffdd57;
-}
 </head>
 <body>
 
@@ -85,13 +67,23 @@ nav ul li a:hover {
     </nav>
 </header>
 
+<section id="anasayfa">
+    <h2>Ana Sayfa</h2>
+    <p>Burada ana sayfa içeriğinizi yazabilirsiniz.</p>
+</section>
+
 <section id="hakkimda">
-<h2>Hakkımda</h2>
-<p>web sitemize hoş geldiniz.</p>
+    <h2>Hakkımda</h2>
+    <p>Buraya kendinizle ilgili bilgiler ekleyin. Örneğin hobiler, ilgi alanları veya yaptığınız işler.</p>
+</section>
+
+<section id="iletisim">
+    <h2>İletişim</h2>
+    <p>E-posta: ornek@mail.com <br> Telefon: 0 555 555 55 55</p>
 </section>
 
 <footer>
-© 2026 Tüm Hakları Saklıdır
+    © 2026 Tüm Hakları Saklıdır
 </footer>
 
 </body>
